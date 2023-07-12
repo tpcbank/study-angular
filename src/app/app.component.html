@@ -1,45 +1,11 @@
-<app-max-min-meter
-  [minLabel]="appMinLabel"
-  [maxLabel]="appMaxLabel"
-  (maxChange)="doAppMaxChange($event)"
-  (minChange)="doAppMinChange($event)"
-></app-max-min-meter>
+<!-- <app-shopping-cart></app-shopping-cart>
+<app-shopping-cart [value]="0"></app-shopping-cart>
+<app-shopping-cart [value]="1"></app-shopping-cart>
+<app-shopping-cart [value]="100"></app-shopping-cart> -->
 
-<!-- <app-action-bar
-  (numberChange)="testNumberBinding($event)"
-  [step]="5"
-></app-action-bar>
-<app-action-bar
-  (numberChange)="testNumberBinding($event)"
-  [step]="10"
-></app-action-bar>
-<button type="button" (click)="testClick()">test event binding</button> -->
-
-<!-- <span>มา 4 จ่าย 3</span>
+<app-shopping-search (onSearch)="searchProduct($event)"></app-shopping-search>
 <div>
-  <input #priceBuffetInput type="text" placeholder="ราคาบุฟเฟ่" /><button
-    (click)="calBuffet(priceBuffetInput.value)"
-  >
-    คำนวน
-  </button>
+  <div *ngFor="let product of filterProduct">
+    <span>{{ product.name }}</span>
+  </div>
 </div>
-<span>คนละ {{ value }} บาท</span> -->
-<!-- hello word angular <br />
-this is my title : {{ title }}
-<br />
-My ninja' name : {{ ninjaName }}
-<br />
-<div>
-  <button type="button" (click)="ninjaConsole()">Console ninja</button>
-</div>
-<div>
-  <button type="button" (click)="changeNinjaname('sakura')">
-    change ninja name to Sakura
-  </button>
-  <button type="button" (click)="changeNinjaname('sasuke')">
-    change ninja name to sasuke
-  </button>
-  <button type="button" (click)="changeNinjaname('naruto')">
-    change ninja name to naruto
-  </button>
-</div> -->

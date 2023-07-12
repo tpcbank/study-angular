@@ -1,0 +1,4 @@
+<div class="cart-notification-container" [class.clickable]="value > 0">
+  <i class="pi pi-shopping-cart" style="font-size: 2rem"></i>
+  <div class="notification" *ngIf="value > 0">{{ value }}</div>
+</div>
